@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/css/estilos.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+	<title>Peliculas</title>
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<h2 class="logotipo">Sistema de Recomendación para peliculas</h2>
+			<nav>
+				<a href="index.html" class="activo">Inicio</a>
+				<a href="#">Recomendación</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="recomendamos">
+			<div class="contenedor-dos">
+                <form action="">
+                    <h2>Ingresa la pelicula (Con base a esta te mostraremos similares teniendo en cuenta su rating):</h2><br>
+                    <input type="text" name="firstname" value="{{data["title"]}}">
+                    <button>Ver peliculas recomendadas</button><br>
+                    <h2>Recomendaciones:</h2><br>
+                </form>
+			</div>
+			<textarea rows="20" cols="auto">{{data["recomendacion"]}}</textarea>
+		</div>
+	</main>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
